@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haruy Sushi - O verdadeiro sabor japonês</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Barlow', sans-serif; }
+    </style>
+</head>
+
+<body class="text-[#222222] overflow-x-hidden m-0 w-screen">
+
+    <header class="w-full bg-white shadow-sm py-4 px-6 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        
+        <h1 class="max-w-[150px] md:max-w-[200px]">
+            <img src="./assets/images/logo.png" alt="Haruy Sushi" class="w-full">
+        </h1>
+
+        <nav class="hidden md:block">
+            <ul class="flex space-x-8 font-bold text-sm uppercase tracking-wider">
+                <li><a href="#cardapio" class="hover:text-[#ca4c3f] transition-colors">Cardápio</a></li>
+                <li><a href="#" class="hover:text-[#ca4c3f] transition-colors">Sobre</a></li>
+                <li><a href="#" class="hover:text-[#ca4c3f] transition-colors">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" class="md:hidden text-[#333333] focus:outline-none p-2" aria-label="Abrir Menu">
+            <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <nav id="mobile-menu" class="hidden md:hidden w-full pt-4 pb-2 border-t mt-4 transition-all duration-300">
+        <ul class="flex flex-col space-y-4 font-bold text-center uppercase">
+            <li><a href="#cardapio" class="block py-2 hover:bg-gray-50 text-[#ca4c3f]">Cardápio</a></li>
+            <li><a href="#" class="block py-2 hover:bg-gray-50">Sobre</a></li>
+            <li><a href="#" class="block py-2 hover:bg-gray-50">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 py-12 md:py-20 max-w-7xl mx-auto gap-8">
+            <div class="w-full md:w-1/2">
+                <p class="text-3xl md:text-6xl font-semibold leading-tight mb-6">O verdadeiro sabor da cozinha japonesa</p>
+                <a class="inline-block border border-[#333333] rounded-2xl px-8 py-5 text-xl font-medium hover:bg-[#333333] hover:text-white transition-all" href="#cardapio">
+                    Veja nosso Cardápio
+                </a>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="./assets/images/banner.png" alt="Prato de sushi variado Haruy Sushi" class="w-[90%] max-w-[500px]">
+            </div>
+        </section>
+
+    <section class="max-w-[43.75rem] mx-auto mt-[6.25rem] border-t border-dashed border-[#999999] pt-[3.125rem] px-[0.938rem] pb-[0.625rem] text-center" id="cardapio">
+        <h1 class="text-4xl font-bold mb-8">Cardápio</h1>
+
+        <h2 class="text-left text-[#ca3c3f] text-[1.375rem] mt-[3.125rem] font-bold">
+            Sushi & Sashimi
+        </h2>
+
+        <section class="grid grid-cols-1 gap-4">
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Combinado Sushi</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 29,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">10 Sashimis Variados, 10 uramakis Filadélfia e 10 uramakis</p>
+            </article>
+
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Combinado Hot</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 75,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">10 Sashimis Variados, 10 uramakis Filadélfia e 10 uramakis</p>
+            </article>
+
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Combinado Sushi</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 55,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">10 Sashimis Variados, 10 uramakis Filadélfia e 10 uramakis</p>
+            </article>
+
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Combinado Hot</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 45,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">10 Sashimis Variados, 10 uramakis Filadélfia e 10 uramakis</p>
+            </article>
+        </section>
+
+        <h2 class="text-left text-[#ca3c3f] text-[1.375rem] mt-[3.125rem] font-bold">
+            Bebidas
+        </h2>
+
+        <div class="grid grid-cols-1 gap-4">
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Refrigerantes</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 8,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">Lata (coca-cola, guaraná)</p>
+            </article>
+
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Água</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 4,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">garrafa 500 ml</p>
+            </article>
+
+            <article class="pt-[1.25rem] text-left w-full">
+                <h3 class="inline-block text-[1.125rem] font-bold">Cerveja</h3>
+                <strong class="text-[0.75rem] text-[#ca3c3f] ml-1">R$ 14,00</strong>
+                <p class="text-[0.75rem] text-[#999999]">Heineken</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="mt-[6.25rem] text-center p-[3.125rem] text-[0.875rem] text-white bg-[#333333]">
+        <h3 class="text-xl font-bold mb-2">Haruy Sushi</h3>
+        <p>Rua Prof. Toledo, 500, centro - Sorocaba</p>
+        <p>WhatsApp: (15) 9876-4321</p>
+        <p>Aberto todos os dias 14h ás 23h</p>
+    </footer>
+
+    <a href="https://wa.me/5515987654321" target="_blank" class="fixed right-[1.25rem] bottom-[1.25rem] hover:scale-110 transition-transform">
+        <img src="./assets/images/whatsapp.png" alt="link-whatsapp" class="h-[3.75rem]">
+    </a>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
